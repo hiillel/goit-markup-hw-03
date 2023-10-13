@@ -34,11 +34,10 @@ img {
 }
 
 .container {
-    max-width: 100%;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
-    width: 1440px;
+    width: 1158px;
 }
 
 /* header */
@@ -49,9 +48,6 @@ img {
 
 .header-container {
     display: flex;
-    width: 1158px;
-    padding: 0 15px;
-
 }
 
 .header-logo {
@@ -76,13 +72,12 @@ img {
     line-height: 1.16;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    padding: 24px 0;
-    margin-right: 76px;
 }
 
 .header-navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 .header-menu {
@@ -108,10 +103,6 @@ img {
     color: #404bbf;
 }
 
-
-.header-menu-item:last-child {
-    padding-right: 332px;
-}
 
 .header-address {
     font-style: normal;
@@ -157,19 +148,14 @@ img {
 }
 
 .order-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: #FFF;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    max-height: 120px;
     max-width: 496px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .order-button {
@@ -214,8 +200,18 @@ img {
 }
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 
 .features-list {
     display: flex;
@@ -243,18 +239,12 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    padding-bottom: 120px;
 }
 
 /* section 3 - team */
 
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
-}
-
-.team-container {
-    max-height: 732px;
     padding: 120px 0;
 }
 
@@ -266,7 +256,6 @@ img {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    padding-bottom: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,11 +269,11 @@ img {
     gap: 24px;
 }
 
-.team-item {
-    max-width: 264px;
-    max-height: 380px;
-    padding-bottom: 120px;
+.team-list:first-child {
     width: calc((100% - 72px) / 4);
+}
+
+.team-item {
     border-radius: 0px 0px 4px 4px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -301,8 +290,6 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    padding-top: 32px;
-    padding-bottom: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -317,13 +304,10 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    padding-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 8px;
-    padding-bottom: 32px;
 
 }
 
@@ -363,13 +347,7 @@ img {
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    max-width: 360px;
-    height: 420px;
-    padding-bottom: 0px;
-    align-items: flex-start;
-    flex-shrink: 0;
+    max-width: calc((100% - 48px) / 3);
 
 }
 
@@ -386,7 +364,6 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    padding-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -396,8 +373,6 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    padding-bottom: 32px;
-    padding-top: 8px;
 }
 
 /* footer */
@@ -406,11 +381,6 @@ img {
     padding: 100px 0;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    max-height: 312px;
-}
 
 .footer-logo {
     color: #4d5ae5;
@@ -420,7 +390,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-    padding-top: 102px;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -443,6 +412,5 @@ img {
     line-height: 1.5;
     letter-spacing: 0.32px;
     max-width: 264px;
-    max-height: 72px;
     padding-bottom: 100px;
 }
